@@ -1,0 +1,23 @@
+header {
+    height: 4.5em;
+    padding: 0 2em;
+
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    left: 0;
+
+    z-index: 999;
+
+    background: cyan;
+}
+
+header > h1 {
+    float: left;
+}
+
+nav {
+    display: block;
+    float: right;
+    height: 100%;
+}
