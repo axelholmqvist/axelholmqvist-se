@@ -1,12 +1,16 @@
 import React from 'react';
 import "./Landing.scss";
 
+import Hero from "../../components/Hero/Hero";
+import Page from '../../components/Page/Page';
+
 export default function Landing() {
   return (
-    <section className="page">
-        <section className="hero">
-            <h2>Landing</h2>
-        </section>
-    </section>
+    <Page>
+        <Hero>
+            <h2>I'm Axel Holmqvist.</h2>
+            <h1>A digital designer.</h1>
+        </Hero>
+    </Page>
   );
 }

@@ -2,13 +2,15 @@ import './App.scss';
 
 import Routes from "./routes/Routes";
 
-import Navigation from './components/Navigation/Navigation';
+import Header from './components/Header/Header';
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
     <div className="container">
-      <Navigation />
+      <Header />
       <Routes />
+      <Footer />
     </div>
   );
 }

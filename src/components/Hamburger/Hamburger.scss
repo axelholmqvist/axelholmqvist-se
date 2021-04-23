@@ -1,0 +1,37 @@
+@import "../../assets/styles/globals.scss";
+
+.hamburger-container {
+    background-color: $gray-7;
+    height: 4.5em;
+    width: 4.5em;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+}
+
+.burger {
+    background-color: $white;
+    width: 1.5em;
+    height: 0.25em;
+}
+
+.burger:before, .burger:after {
+    content: "";
+    position: absolute;
+
+    background-color: $white;
+    width: 1.5em;
+    height: 0.25em;
+}
+
+.burger:before {
+    transform: translate(-0.75em, -0.50em);
+}
+
+.burger:after {
+    transform: translate(-0.75em, 0.50em);
+}
+
