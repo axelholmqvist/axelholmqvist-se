@@ -1,12 +1,10 @@
 import React, { useState } from 'react';
 import "./Hamburger.scss";
 
-export default function Hamburger() {
-
-  const [navOpen, setNavOpen] = useState(false);
+export default function Hamburger( {navOpen, setNavOpen} ) {
 
   const handleClick = () => {
-    setNavOpen(true);
+    setNavOpen(!navOpen);
   };
 
   return (

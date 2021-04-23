@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 import Hamburger from "../Hamburger/Hamburger";
 
-export default function Header() {
+export default function Header( {navOpen, setNavOpen} ) {
   return (
     <header>
       <h1>AH.</h1>
@@ -14,7 +14,7 @@ export default function Header() {
             <li><Link to="/contact">Contact</Link></li>
         </ul>
       </nav>
-      <Hamburger />
+      <Hamburger navOpen={navOpen} setNavOpen={setNavOpen} />
     </header>
   )
 }

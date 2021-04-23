@@ -1,7 +1,6 @@
 @import "../../assets/styles/globals.scss";
 
 .hamburger-container {
-    background-color: $gray-7;
     height: 4.5em;
     width: 4.5em;
 
@@ -10,12 +9,14 @@
     align-items: center;
 
     cursor: pointer;
+
+    //border: 1px solid $gray-2;
 }
 
 .burger {
     background-color: $white;
     width: 1.5em;
-    height: 0.25em;
+    height: 0.20em;
 }
 
 .burger:before, .burger:after {
@@ -24,14 +25,14 @@
 
     background-color: $white;
     width: 1.5em;
-    height: 0.25em;
+    height: 0.20em;
 }
 
 .burger:before {
-    transform: translate(-0.75em, -0.50em);
+    transform: translate(-0.75em, -0.45em);
 }
 
 .burger:after {
-    transform: translate(-0.75em, 0.50em);
+    transform: translate(-0.75em, 0.45em);
 }
 
