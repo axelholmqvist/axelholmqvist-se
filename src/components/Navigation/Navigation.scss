@@ -11,10 +11,61 @@
     justify-content: center;
     align-items: center;
 
-    cursor: pointer;
-
-    background-color: $gray-7;
     //border: 1px solid $gray-2;
 }
 
+ul.menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    color: $white;
 
+    li {
+        padding: 10px;
+        font-size: 24pt;
+        font-weight: 700;
+        //opacity: 0.9;
+
+        -webkit-transition: all 1s ease-out;
+        -moz-transition: all 1s ease-out;
+        -o-transition: all 1s ease-out;
+        transition: all 1s ease-out;
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        &:after {
+            content: ".";
+        }
+
+        &:hover {    
+            transform: scale(1.05);  
+            
+            /*
+            &:before {
+                content: ".";
+                animation: fadeIn ease-in-out 1s forwards;
+            }
+            &:after {
+                content: ".";
+                animation: fadeIn ease-in-out 1s forwards;
+            }
+            */
+        }
+    }
+
+    li.hidden {
+        opacity: 0;
+    }
+
+    li.visible {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}

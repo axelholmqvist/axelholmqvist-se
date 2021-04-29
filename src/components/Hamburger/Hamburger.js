@@ -8,8 +8,12 @@ export default function Hamburger( {navOpen, setNavOpen} ) {
   };
 
   return (
-    <div className="hamburger-container" onClick={handleClick}>
-      <div className="burger" />
+    <div className="hamburger-container">
+      <div className="hamburger" onClick={handleClick}>
+        <div className="burger" />
+        <div className="burger" />
+        <div className="burger" />
+      </div>
     </div>
   )
 }
