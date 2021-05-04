@@ -1,0 +1,36 @@
+@import "../../assets/styles/globals.scss";
+
+.logotype-container {
+    h1 {
+        -webkit-transition: transform 0.2s ease-out;
+        -moz-transition: transform 0.2s ease-out;
+        -o-transition: transform 0.2s ease-out;
+        transition: transform 0.2s ease-out;
+        
+        a {
+            color: $white;
+            opacity: 0.9;
+        }
+
+        &:after {
+            position: absolute;
+            content: ".";
+
+            -webkit-transition: all 1s ease-out;
+            -moz-transition: all 1s ease-out;
+            -o-transition: all 1s ease-out;
+            transition: all 1s ease-out;
+        }
+
+        &:hover {    
+            opacity: 1;
+            transform: scale(1.1)!important;
+
+            &:after {
+                content: ".";
+                transform: translateX(50px);
+                opacity: 0;
+            }
+        }
+    }
+}
