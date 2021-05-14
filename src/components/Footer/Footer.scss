@@ -1,8 +1,8 @@
 @import "../../assets/styles/globals.scss";
 
 footer {
-    height: 4.5em;
-    padding: 0 2em;
+    height: 8em; //4.5em
+    padding: 0 2em 0.5em 2em;
 
     width: 100%;
     box-sizing: border-box;
@@ -16,8 +16,22 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: flex-end;
 
     color: $white;
     
     //border: 1px solid $gray-2;
+}
+
+.footer-areas {
+    text-align: left;
+    opacity: 0.5;
+}
+
+.footer-contact {
+    text-align: right;
+}
+
+.footer-areas, .footer-copyright, .footer-contact {
+    width: calc(100% / 3);
 }

@@ -1,1 +1,15 @@
 @import "../../assets/styles/globals.scss";
+
+.landing-page {
+    background: $main-gradient;
+}
+
+.landing-blob {
+    position: relative;
+    z-index: 0;
+}
+
+.landing-title {
+    position: absolute;
+    z-index: 100;
+}

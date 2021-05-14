@@ -1,6 +1,6 @@
 import './App.scss';
 
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 import Routes from "./routes/Routes";
 
@@ -10,6 +10,14 @@ import Navigation from './components/Navigation/Navigation';
 
 function App() {
   const [navOpen, setNavOpen] = useState(false);
+
+  useEffect(() => {
+    if (navOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'unset';
+    }
+  }, [navOpen]);
 
   return (
     <div className="container">

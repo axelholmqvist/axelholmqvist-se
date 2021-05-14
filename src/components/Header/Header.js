@@ -3,7 +3,6 @@ import "./Header.scss";
 
 import Hamburger from "../Hamburger/Hamburger";
 import Logotype from "../Logotype/Logotype";
-import { Link } from 'react-router-dom';
 
 export default function Header( {navOpen, setNavOpen} ) {
   return (
