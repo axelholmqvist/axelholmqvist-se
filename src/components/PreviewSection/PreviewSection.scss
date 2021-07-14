@@ -1,0 +1,117 @@
+@import "../../assets/styles/globals.scss";
+
+.preview-section {
+    position: relative;
+    z-index: 0;
+
+    display: flex;
+    flex-direction: row;
+
+    text-align: left;
+}
+
+.preview-section-left {
+    //background: $primary-2;
+
+    .preview-description-container {
+
+    }
+    
+    .preview-description {
+
+        h4 {
+            color: $primary-3;
+        }
+        p {
+            color: $primary-3;
+        }
+        a {
+            color: $primary-3;
+        }
+        &::before {
+            background: $gradient-2;
+        }
+    }
+}
+
+.preview-section-right {
+    //background: $primary-2;
+
+    .preview-description-container {
+
+    }
+    
+    .preview-description {
+
+        h4 {
+            color: $primary-3;
+        }
+        p {
+            color: $primary-3;
+        }
+        a {
+            color: $primary-3;
+        }
+        &::before {
+            background: $gradient-3;
+        }
+    }
+}
+
+.preview-description {
+    position: relative;
+}
+
+.preview-description:before {
+    content : "";
+    position: absolute;
+    left    : -4.5em;
+    bottom  : 0;
+    height  : 90%;
+    width   : 10px;  /* or 100px */
+
+    -webkit-transition: height 0.2s ease-out;
+    -moz-transition: height 0.2s ease-out;
+    -o-transition: height 0.2s ease-out;
+    transition: height 0.2s ease-out;
+}
+
+.preview-description-hover {
+    .preview-title, .preview-excerpt {
+        transform: translateY(-25px);
+    }
+}
+
+.preview-description-hover.preview-description:before {
+    height: 100%;
+}
+
+.preview-title {
+    -webkit-transition: transform 0.2s ease-out;
+    -moz-transition: transform 0.2s ease-out;
+    -o-transition: transform 0.2s ease-out;
+    transition: transform 0.2s ease-out;
+}
+
+.preview-excerpt {
+    -webkit-transition: transform 0.2s ease-out;
+    -moz-transition: transform 0.2s ease-out;
+    -o-transition: transform 0.2s ease-out;
+    transition: transform 0.2s ease-out;
+
+    color: $white;
+}
+
+.preview-image {
+    width: 40%;
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.preview-description-container {
+    width: 60%;
+    padding: 9em 4.5em 9em 18em;
+    display: flex;
+}

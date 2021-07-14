@@ -9,8 +9,8 @@ export default function Navigation( {navOpen, setNavOpen} ) {
     {link : "/", label : "home", visibility : "hidden" },
     {link : "/about", label : "about", visibility : "hidden" },
     {link : "/portfolio", label : "portfolio", visibility : "hidden" },
-    {link : "/pricing", label : "pricing", visibility : "hidden" },
     {link : "/articles", label : "articles", visibility : "hidden" },
+    {link : "/pricing", label : "pricing", visibility : "hidden" },
     {link : "/contact", label : "contact", visibility : "hidden" },
   ]);
 

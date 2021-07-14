@@ -4,6 +4,7 @@ import { Route, Switch } from 'react-router-dom';
 
 import Landing from '../pages/Landing/Landing';
 import Contact from '../pages/Contact/Contact';
+import PageNotFound from '../pages/PageNotFound/PageNotFound';
 
 export default function Routes() {
   return (
@@ -17,7 +18,7 @@ export default function Routes() {
       </Route>
 
       <Route>
-        <p>Woops! Page not found.</p>
+        <PageNotFound />
       </Route>
     </Switch>
   )

@@ -1,7 +1,12 @@
 @import "../../assets/styles/globals.scss";
 
 .landing-page {
-    background: $main-gradient;
+    //background: $gradient-0;
+}
+
+.landing-particles {
+    position: fixed;
+    z-index: -1;
 }
 
 .landing-blob {

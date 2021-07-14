@@ -309,7 +309,7 @@ export default function Blob() {
   var scene = new THREE.Scene();
   var camera = new THREE.PerspectiveCamera( 45, window.innerWidth/window.innerHeight, 0.1, 1000 );
   var sphere_geometry = new THREE.SphereGeometry(1, 128, 128);
-  var material = new THREE.MeshNormalMaterial();
+  var material = new THREE.MeshNormalMaterial( {wireframe: true });
   var sphere = new THREE.Mesh(sphere_geometry, material);
 
   //const script = document.createElement("script");
