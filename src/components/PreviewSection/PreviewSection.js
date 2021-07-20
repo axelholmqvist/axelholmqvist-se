@@ -8,13 +8,6 @@ export default function PreviewSection( {children, title, link, linkText, previe
     backgroundImage: `url(${process.env.PUBLIC_URL + "/assets/images/" + previewImage})`,
   };
 
-  var sectionClass;
-  if (layoutType === "left") {
-    sectionClass = "preview-section-left";
-  } else {
-    sectionClass = "preview-section-right";
-  }
-
   const [descriptionClass, setDescriptionClass] = useState("");
 
   function onEnterHandler() {
@@ -28,26 +21,19 @@ export default function PreviewSection( {children, title, link, linkText, previe
   }
 
   return (
-    <section className={"preview-section " + sectionClass}>
-        {layoutType === "right" &&
-          <div className="preview-image" style={image}/>
-        }
-
+    <section className="preview-section">
         <div className="preview-description-container">
           <div className={"preview-description " + descriptionClass}>
-              <h4 className="preview-title title-1">
+              <h4 className="preview-title title-3">
                 {title}
               </h4>
+              <div className="item-divider"/>
               <div className="preview-excerpt">
                   {children}
               </div>
               <Link to={link} className="arrow-link" onMouseEnter={onEnterHandler} onMouseLeave={onLeaveHandler}>{linkText}</Link>
           </div>
         </div>
-        
-        {layoutType === "left" &&
-          <div className="preview-image" style={image}/>
-        } 
     </section>
   );
 }
