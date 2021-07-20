@@ -1,48 +1,81 @@
 @import "../../assets/styles/globals.scss";
 
 footer {
-    height: 8em; //4.5em
-    padding: 0 2em 0.5em 2em;
+    padding: 2em;
 
-    width: 100%;
-    box-sizing: border-box;
-
-    position: fixed;
-    bottom: 0;
-    left: 0;
-
-    z-index: 100;
-
-    display: flex;
-    flex-direction: row;
-    //justify-content: space-between;
-    justify-content: center;
-    align-items: flex-end;
+    width: 80%;
+    margin-left: 10%;
 
     color: $white;
-
-    pointer-events: none;
-    
-    //border: 1px solid $gray-2;
 }
 
-.footer-column {
-    //width: calc(100% / 3);
-    width: fit-content;
+.footer-wrapper {
+}
+
+.footer-box-wrapper {
+    background: linear-gradient(315deg, #0F0A06, #1A140F);
+    box-sizing: border-box;
+    border-radius: 50px;
+    padding: 60px;
+
+    box-shadow:  -20px -20px 60px rgba(#000, .75),
+                    20px 20px 60px rgba(#fff, .05);
+
+    text-align: left;
+
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 }
 
-#footer-column-left {
-    justify-content: flex-start;
-    opacity: 0.5;
-    text-align: left;
+.contact-email-hover {
+    .item-divider {
+        width: 100%;
+    }
 }
 
-#footer-column-mid {
+.footer-text-wrapper {
+    margin-top: 50px;
+}
+
+.contact-email {
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+
+.image-wrapper {
+    height: 100%;
+    //border: 1px solid red;
+    
+    display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
-#footer-column-right {
-    justify-content: flex-end;
+.image {
+    height: 350px;
+    width: 350px;
+    border-radius: 40px;
+
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    box-shadow:  -20px -20px 60px rgba(#000, .75),
+                    20px 20px 60px rgba(#fff, .05);
+}
+
+.icon-button {
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    margin-top: 50px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    box-shadow:  4px 4px 8px rgba(#fff, 0.1),
+                -4px -4px 8px rgba(#000, 1);
 }

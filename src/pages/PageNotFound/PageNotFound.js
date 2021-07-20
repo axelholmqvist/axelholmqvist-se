@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Hero from '../../components/Hero/Hero';
 import Page from '../../components/Page/Page';
+import Particles from "../../components/Particles/Particles";
 
 import "./PageNotFound.scss";
 

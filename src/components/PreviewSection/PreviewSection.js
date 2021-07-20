@@ -8,22 +8,22 @@ export default function PreviewSection( {children, title, link, linkText, previe
     backgroundImage: `url(${process.env.PUBLIC_URL + "/assets/images/" + previewImage})`,
   };
 
-  const [descriptionClass, setDescriptionClass] = useState("");
+  const [hoverClass, setHoverClass] = useState("");
 
   function onEnterHandler() {
-    setDescriptionClass("preview-description-hover");
+    setHoverClass("arrow-link-hover");
     //console.log("On mouse enter.")
   }
 
   function onLeaveHandler() {
-    setDescriptionClass("");
+    setHoverClass("");
     //console.log("On mouse enter.")
   }
 
   return (
     <section className="preview-section">
-        <div className="preview-description-container">
-          <div className={"preview-description " + descriptionClass}>
+        <div className={"preview-description-container " + hoverClass}>
+          <div className="preview-description">
               <h4 className="preview-title title-3">
                 {title}
               </h4>

@@ -34,7 +34,7 @@
 .arrow-link {
     font-size: 16pt;
     font-weight: 900;
-    color: $primary-1;
+    color: $white;
     display: inline-block;
 
     -webkit-transition: transform 0.2s ease-out;
@@ -44,7 +44,7 @@
 
     &:after {
         position: absolute;
-        margin-left: 0.25em;
+        margin-left: 0.4em;
         content: ">";
 
         -webkit-transition: all 1s ease-out;
@@ -55,7 +55,7 @@
 
     &:hover {    
         opacity: 1;
-        transform: scale(1.02)!important;
+        //transform: scale(1.02)!important;
 
         &:after {
             content: ">";
